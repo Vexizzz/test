@@ -76,20 +76,7 @@
             <img id="her_id" src="five.png" height="200" width="200" alt="Hexagon"/>
         </div>
     </div>
-
-    <script>
-        // Function to handle image interaction
-        function setupImageInteraction(id, audioFile, newImage, revertImage, delay = 1000) {
-            const img = document.getElementById(id);
-            const audio = new Audio(audioFile);
-
-            img.onpointerdown = () => {
-                audio.play();
-                img.src = newImage;
-                setTimeout(() => img.src = revertImage, delay);
-            };
-        }
-
+    
      <script>
         // Image with ID 'cir_id'
         const cir = document.getElementById('cir_id');
