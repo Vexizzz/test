@@ -94,9 +94,9 @@
         setTimeout(() => tri.src = 'one.png', 200); // Revert after 1 second
     }
     
-    // Image with ID 'tri_id'
+    // Image with ID 'squ_id'
     const squ = document.getElementById('squ_id');
-    const squ_audio = new Audio('tri.mp3'); // Ensure path is correct
+    const squ_audio = new Audio('squ.mp3'); // Ensure path is correct
     tri.onclick = () => {
         tri_audio.play().catch(error => console.error("Error playing audio:", error));
         tri.src = 'shadedsqu.png'; // Change to a specific image
