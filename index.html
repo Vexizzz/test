@@ -82,7 +82,7 @@
         cir.onclick = () => {
             cir_audio.play().catch(error => console.error("Error playing audio:", error));
             cir.src = 'shadedcir.png'; // Change to a specific image
-            setTimeout(() => cir.src = 'two.png', 1000); // Revert after 1 second
+            setTimeout(() => cir.src = 'two.png', 500); // Revert after 1 second
         }
     </script>
 
