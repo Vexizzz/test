@@ -75,16 +75,15 @@
         </div>
     </div>
     
-     <script>
-   // Image with ID 'cir_id'
-        const cir = document.getElementById ('cir_id');
-        const cir_audio = new Audio ('cir.mp3'); // Unique sound file
+    <script>
+        // Image with ID 'cir_id'
+        const cir = document.getElementById('cir_id');
+        const cir_audio = new Audio('cir.mp3'); // Ensure path is correct
         cir.onclick = () => {
-            cir_audio.play ();
-            cir.src = 'shadedcir.png' // Change to a specific image
-            setTimeout (() => cir.src = 'two.png', 1000); // Revert after 1 second
+            cir_audio.play().catch(error => console.error("Error playing audio:", error));
+            cir.src = 'shadedcir.png'; // Change to a specific image
+            setTimeout(() => cir.src = 'two.png', 1000); // Revert after 1 second
         }
-         
     </script>
 
 </body>
