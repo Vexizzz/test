@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<!DOCTYPE html>
-<html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,64 +84,7 @@
             cir.src = 'shadedcir.png' // Change to a specific image
             setTimeout (() => cir.src = 'two.png', 1000); // Revert after 1 second
         }
-
-        // Image with ID 'tri_id'
-        const tri = document.getElementById('tri_id');
-        const tri_audio = new Audio('sounds/tri.mp3'); // Unique sound file
-        tri.onclick = () => {
-            tri_audio.play();
-            tri.src = 'img/shadedtri.png'; // Change to a specific image
-            setTimeout(() => tri.src = 'img/one.png', 1000); // Revert after 1 second
-
-        // Image with ID 'squ_id'
-        const squ = document.getElementById('squ_id');
-        const squ_audio = new Audio('sounds/squ.mp3'); // Unique sound file
-        squ.onpointerdown = () => squ_audio.play();
-        squ.onpointerover = () => squ.src = 'img/shadedsqu.png'; // Change to a specific image on hover
-        squ.onpointerout = () => squ.src = 'img/six.png'; // Revert to original image
-
-        // Image with ID 'hex_id'
-        const hex = document.getElementById('hex_id');
-        const hex_audio = new Audio('sounds/hex.mp3'); // Unique sound file
-        hex.onpointerdown = () => hex_audio.play();
-        hex.onpointerover = () => hex.src = 'img/shadedhex.png'; // Change to a specific image on hover
-        hex.onpointerout = () => hex.src = 'img/four.png'; // Revert to original image
-
-        // Image with ID 'rec_id'
-        const rec = document.getElementById('rec_id');
-        const rec_audio = new Audio('sounds/rec.mp3'); // Unique sound file
-        rec.onpointerdown = () => rec_audio.play();
-        rec.onpointerover = () => rec.src = 'img/shadedrec.png'; // Change to a specific image on hover
-        rec.onpointerout = () => rec.src = 'img/nine.png'; // Revert to original image
-
-        // Image with ID 'sta_id'
-        const sta = document.getElementById('sta_id');
-        const sta_audio = new Audio('sounds/sta.mp3'); // Unique sound file
-        sta.onpointerdown = () => sta_audio.play();
-        sta.onpointerover = () => sta.src = 'img/shadedsta.png'; // Change to a specific image on hover
-        sta.onpointerout = () => sta.src = 'img/three.png'; // Revert to original image
-
-        // Image with ID 'trr_id'
-        const trr = document.getElementById('trr_id');
-        const trr_audio = new Audio('sounds/trr.mp3'); // Unique sound file
-        trr.onpointerdown = () => trr_audio.play();
-        trr.onpointerover = () => trr.src = 'img/shadedtrr.png'; // Change to a specific image on hover
-        trr.onpointerout = () => trr.src = 'img/seven.png'; // Revert to original image
-
-        // Image with ID 'sqr_id'
-        const sqr = document.getElementById('sqr_id');
-        const sqr_audio = new Audio('sounds/sqr.mp3'); // Unique sound file
-        sqr.onpointerdown = () => sqr_audio.play();
-        sqr.onpointerover = () => sqr.src = 'img/shadedsqr.png'; // Change to a specific image on hover
-        sqr.onpointerout = () => sqr.src = 'img/eight.png'; // Revert to original image
-
-        // Image with ID 'her_id'
-        const her = document.getElementById('her_id');
-        const her_audio = new Audio('sounds/her.mp3'); // Unique sound file
-        her.onpointerdown = () => her_audio.play();
-        her.onpointerover = () => her.src = 'img/shadedher.png'; // Change to a specific image on hover
-        her.onpointerout = () => her.src = 'img/five.png'; // Revert to original image
-            
+         
     </script>
 
 </body>
