@@ -91,7 +91,7 @@
     tri.onclick = () => {
         tri_audio.play().catch(error => console.error("Error playing audio:", error));
         tri.src = 'shadedtri.png'; // Change to a specific image
-        setTimeout(() => tri.src = 'one.png', 400); // Revert after 1 second
+        setTimeout(() => tri.src = 'one.png', 200); // Revert after 1 second
     }
     
     // Image with ID 'tri_id'
@@ -100,7 +100,7 @@
     tri.onclick = () => {
         tri_audio.play().catch(error => console.error("Error playing audio:", error));
         tri.src = 'shadedsqu.png'; // Change to a specific image
-        setTimeout(() => squ.src = 'six.png', 400); // Revert after 1 second
+        setTimeout(() => squ.src = 'six.png', 200); // Revert after 1 second
     }
 </script>
 
