@@ -81,9 +81,7 @@
          
         // Image with ID 'cir_id'
         const cir = document.getElementById ('cir_id');
-        const cir_audio = new Audio ('sounds/cir.mp3'); // Unique sound file
         cir.onpointerdown = () => {
-            cir_audio.play();
             cir.src = 'shadedcir.png'; // Change to a specific image
             setTimeout (() => cir.src = 'two.png', 1000); // Revert after 1 second
         }
