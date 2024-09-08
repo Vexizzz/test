@@ -82,7 +82,7 @@
     cir.onclick = () => {
         cir_audio.play().catch(error => console.error("Error playing audio:", error));
         cir.src = 'shadedcir.png'; // Change to a specific image
-        setTimeout(() => cir.src = 'two.png', 200); // Revert after 1 second
+        setTimeout(() => cir.src = 'two.png', 180); // Revert after 1 second
     }
 
     // Image with ID 'tri_id'
@@ -109,6 +109,14 @@
         hex_audio.play().catch(error => console.error("Error playing audio:", error));
         hex.src = 'shadedhex.png'; // Change to a specific image
         setTimeout(() => hex.src = 'four.png', 200); // Revert after 1 second
+    }
+        // Image with ID 'rec_id'
+    const rec = document.getElementById('rec_id');
+    const rec_audio = new Audio('rec.mp3'); // Ensure path is correct
+    rec.onclick = () => {
+        rec_audio.play().catch(error => console.error("Error playing audio:", error));
+        rec.src = 'shadedrec.png'; // Change to a specific image
+        setTimeout(() => rec.src = 'nine.png', 200); // Revert after 1 second
     }
 </script>
 
