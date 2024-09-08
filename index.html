@@ -79,10 +79,9 @@
     </div>
     
      <script>
-         
    // Image with ID 'cir_id'
         const cir = document.getElementById ('cir_id');
-        const cir_audio = new Audio ('sounds/cir.mp3'); // Unique sound file
+        const cir_audio = new Audio ('cir.mp3'); // Unique sound file
         cir.onclick = () => {
             cir_audio.play ();
             cir.src = 'shadedcir.png' // Change to a specific image
