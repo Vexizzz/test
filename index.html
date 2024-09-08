@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3x3 Grid Layout of Images</title>
     <style>
+     <style>
         body {
             background-color: #372319;
         }
@@ -38,22 +39,108 @@
 
     <!-- 3x3 Grid Layout of Images -->
     <div class="row">
-        <div class="image-container"><img src="two.png" height="200" width="200" alt="Circle"/></div>
-        <div class="image-container"><img src="six.png" height="200" width="200" alt="Triangle"/></div>
-        <div class="image-container"><img src="nine.png" height="200" width="200" alt="Square"/></div>
+        <div class="image-container">
+            <img id="cir_id" src="two.png" height="200" width="200" alt="Circle"/>
+        </div>
+        <div class="image-container">
+            <img id="tri_id" src="one.png" height="200" width="200" alt="Triangle"/>
+        </div>
+        <div class="image-container">
+            <img id="squ_id" src="six.png" height="200" width="200" alt="Square"/>
+        </div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img src="four.png" height="200" width="200" alt="Hexagon"/></div>
-        <div class="image-container"><img src="one.png" height="200" width="200" alt="Rectangle"/></div>
-        <div class="image-container"><img src="three.png" height="200" width="200" alt="Star"/></div>
+        <div class="image-container">
+            <img id="hex_id" src="four.png" height="200" width="200" alt="Hexagon"/>
+        </div>
+        <div class="image-container">
+            <img id="rec_id" src="nine.png" height="200" width="200" alt="Rectangle"/>
+        </div>
+        <div class="image-container">
+            <img id="sta_id" src="three.png" height="200" width="200" alt="Star"/>
+        </div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img src="eight.png" height="200" width="200" alt="Trapezoid"/></div>
-        <div class="image-container"><img src="seven.png" height="200" width="200" alt="Square"/></div>
-        <div class="image-container"><img src="five.png" height="200" width="200" alt="Hexagon"/></div>
+        <div class="image-container">
+            <img id="trr_id" src="seven.png" height="200" width="200" alt="Trapezoid"/>
+        </div>
+        <div class="image-container">
+            <img id="sqr_id" src="eight.png" height="200" width="200" alt="Square"/>
+        </div>
+        <div class="image-container">
+            <img id="her_id" src="five.png" height="200" width="200" alt="Hexagon"/>
+        </div>
     </div>
+
+     <script>
+        // Image with ID 'cir_id'
+        const cir = document.getElementById('cir_id');
+        const cir_audio = new Audio('sounds/cir.mp3'); // Unique sound file
+        cir.onpointerdown = () => {
+            cir_audio.play();
+            cir.src = 'img/shadedcir.png'; // Change to a specific image
+            setTimeout(() => cir.src = 'img/two.png', 1000); // Revert after 1 second
+        };
+
+        // Image with ID 'tri_id'
+        const tri = document.getElementById('tri_id');
+        const tri_audio = new Audio('sounds/tri.mp3'); // Unique sound file
+        tri.onpointerdown = () => {
+            tri_audio.play();
+            tri.src = 'img/shadedtri.png'; // Change to a specific image
+            setTimeout(() => tri.src = 'img/one.png', 1000); // Revert after 1 second
+
+        // Image with ID 'squ_id'
+        const squ = document.getElementById('squ_id');
+        const squ_audio = new Audio('sounds/squ.mp3'); // Unique sound file
+        squ.onpointerdown = () => squ_audio.play();
+        squ.onpointerover = () => squ.src = 'img/shadedsqu.png'; // Change to a specific image on hover
+        squ.onpointerout = () => squ.src = 'img/six.png.png'; // Revert to original image
+
+        // Image with ID 'hex_id'
+        const hex = document.getElementById('hex_id');
+        const hex_audio = new Audio('sounds/hex.mp3'); // Unique sound file
+        hex.onpointerdown = () => hex_audio.play();
+        hex.onpointerover = () => hex.src = 'img/rec.png'; // Change to a specific image on hover
+        hex.onpointerout = () => hex.src = 'img/hex.png'; // Revert to original image
+
+        // Image with ID 'rec_id'
+        const rec = document.getElementById('rec_id');
+        const rec_audio = new Audio('sounds/rec.mp3'); // Unique sound file
+        rec.onpointerdown = () => rec_audio.play();
+        rec.onpointerover = () => rec.src = 'img/sta.png'; // Change to a specific image on hover
+        rec.onpointerout = () => rec.src = 'img/rec.png'; // Revert to original image
+
+        // Image with ID 'sta_id'
+        const sta = document.getElementById('sta_id');
+        const sta_audio = new Audio('sounds/sta.mp3'); // Unique sound file
+        sta.onpointerdown = () => sta_audio.play();
+        sta.onpointerover = () => sta.src = 'img/trr.png'; // Change to a specific image on hover
+        sta.onpointerout = () => sta.src = 'img/sta.png'; // Revert to original image
+
+        // Image with ID 'trr_id'
+        const trr = document.getElementById('trr_id');
+        const trr_audio = new Audio('sounds/trr.mp3'); // Unique sound file
+        trr.onpointerdown = () => trr_audio.play();
+        trr.onpointerover = () => trr.src = 'img/sqr.png'; // Change to a specific image on hover
+        trr.onpointerout = () => trr.src = 'img/trr.png'; // Revert to original image
+
+        // Image with ID 'sqr_id'
+        const sqr = document.getElementById('sqr_id');
+        const sqr_audio = new Audio('sounds/sqr.mp3'); // Unique sound file
+        sqr.onpointerdown = () => sqr_audio.play();
+        sqr.onpointerover = () => sqr.src = 'img/her.png'; // Change to a specific image on hover
+        sqr.onpointerout = () => sqr.src = 'img/sqr.png'; // Revert to original image
+
+        // Image with ID 'her_id'
+        const her = document.getElementById('her_id');
+        const her_audio = new Audio('sounds/her.mp3'); // Unique sound file
+        her.onpointerdown = () => her_audio.play();
+        her.onpointerover = () => her.src = 'img/cir.png'; // Change to a specific image on hover
+        her.onpointerout = () => her.src = 'img/her.png'; // Revert to original image
+    </script>
 
 </body>
 
