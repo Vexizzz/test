@@ -79,6 +79,9 @@
     // Image with ID 'cir_id'
     const cir = document.getElementById('cir_id');
     const cir_audio = new Audio('cir.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+cir_audio.preload = 'auto';
+
     cir.onclick = () => {
         cir_audio.play().catch(error => console.error("Error playing audio:", error));
         cir.src = 'shadedcir.png'; // Change to a specific image
@@ -88,6 +91,9 @@
     // Image with ID 'tri_id'
     const tri = document.getElementById('tri_id');
     const tri_audio = new Audio('tri.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+tri_audio.preload = 'auto';
+    
     tri.onclick = () => {
         tri_audio.play().catch(error => console.error("Error playing audio:", error));
         tri.src = 'shadedtri.png'; // Change to a specific image
@@ -97,6 +103,8 @@
     // Image with ID 'squ_id'
     const squ = document.getElementById('squ_id');
     const squ_audio = new Audio('squ.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+squ_audio.preload = 'auto';
     squ.onclick = () => {
         squ_audio.play().catch(error => console.error("Error playing audio:", error));
         squ.src = 'shadedsqu.png'; // Change to a specific image
@@ -105,6 +113,8 @@
     // Image with ID 'hex_id'
     const hex = document.getElementById('hex_id');
     const hex_audio = new Audio('hex.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+hex_audio.preload = 'auto';
     hex.onclick = () => {
         hex_audio.play().catch(error => console.error("Error playing audio:", error));
         hex.src = 'shadedhex.png'; // Change to a specific image
@@ -113,6 +123,8 @@
         // Image with ID 'rec_id'
     const rec = document.getElementById('rec_id');
     const rec_audio = new Audio('rec.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+rec_audio.preload = 'auto';
     rec.onclick = () => {
         rec_audio.play().catch(error => console.error("Error playing audio:", error));
         rec.src = 'shadedrec.png'; // Change to a specific image
@@ -129,6 +141,8 @@
      // Image with ID 'trr_id'
     const trr = document.getElementById('trr_id');
     const trr_audio = new Audio('trr.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+trr_audio.preload = 'auto';
     trr.onclick = () => {
         trr_audio.play().catch(error => console.error("Error playing audio:", error));
         trr.src = 'shadedtrr.png'; // Change to a specific image
@@ -137,6 +151,9 @@
      // Image with ID 'sqr_id'
     const sqr = document.getElementById('sqr_id');
     const sqr_audio = new Audio('sqr.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+sqr_audio.preload = 'auto';
+    
     sqr.onclick = () => {
         sqr_audio.play().catch(error => console.error("Error playing audio:", error));
         sqr.src = 'shadedsqr.png'; // Change to a specific image
@@ -145,6 +162,9 @@
      // Image with ID 'her_id'
     const her = document.getElementById('her_id');
     const her_audio = new Audio('her.mp3'); // Ensure path is correct
+    // Preload audio to ensure it is ready to play
+her_audio.preload = 'auto';
+    
     her.onclick = () => {
         her_audio.play().catch(error => console.error("Error playing audio:", error));
         her.src = 'shadedher.png'; // Change to a specific image
