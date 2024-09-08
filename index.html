@@ -126,6 +126,30 @@
         sta.src = 'shadedsta.png'; // Change to a specific image
         setTimeout(() => sta.src = 'three.png', 200); // Revert after 1 second
     }
+     // Image with ID 'trr_id'
+    const trr = document.getElementById('trr_id');
+    const trr_audio = new Audio('trr.mp3'); // Ensure path is correct
+    trr.onclick = () => {
+        trr_audio.play().catch(error => console.error("Error playing audio:", error));
+        trr.src = 'shadedtrr.png'; // Change to a specific image
+        setTimeout(() => trr.src = 'seven.png', 200); // Revert after 1 second
+    }
+     // Image with ID 'sqr_id'
+    const sqr = document.getElementById('sqr_id');
+    const sqr_audio = new Audio('sqr.mp3'); // Ensure path is correct
+    sqr.onclick = () => {
+        sqr_audio.play().catch(error => console.error("Error playing audio:", error));
+        sqr.src = 'shadedsqr.png'; // Change to a specific image
+        setTimeout(() => sqr.src = 'eight.png', 200); // Revert after 1 second
+    }
+     // Image with ID 'her_id'
+    const her = document.getElementById('her_id');
+    const her_audio = new Audio('her.mp3'); // Ensure path is correct
+    her.onclick = () => {
+        her_audio.play().catch(error => console.error("Error playing audio:", error));
+        her.src = 'shadedher.png'; // Change to a specific image
+        setTimeout(() => her.src = 'five.png', 200); // Revert after 1 second
+    }
 </script>
 
 </body>
